@@ -1,1 +1,10 @@
 
+Graduates
+    Person
+    Scheme 
+    Location
+
+Person 
+   First Name
+   Last Name
+   Age 
