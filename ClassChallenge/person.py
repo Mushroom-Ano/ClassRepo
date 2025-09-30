@@ -17,6 +17,13 @@ class Person:
     def set_last_name(self, name):
         self._last_name = name
 
+    def get_age(self) -> int:
+        return self.__age
+    
+    def set_age(self, age):
+        self.__age = age
+
+
 
 
 
