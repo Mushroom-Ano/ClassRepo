@@ -1,3 +1,4 @@
+from person import *
 from graduate import *
 
 def main():

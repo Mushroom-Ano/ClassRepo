@@ -21,10 +21,10 @@ class Person:
         return self.__age
     
     def set_age(self, age):
-        if self.__age > 0:
-            print("Age cannot be negative")
+        if age > 0:
+            self.__age = int(age)
+        else:
             raise Error("Age cannot be negative")
-        self.__age = age
 
 
 
