@@ -25,6 +25,9 @@ class Person:
             self.__age = int(age)
         else:
             raise Error("Age cannot be negative")
+        
+    def get_profile(self) -> str:
+        return f"my First Name is {self.first_name} and my Last Name is {self._last_name}"
 
 
 

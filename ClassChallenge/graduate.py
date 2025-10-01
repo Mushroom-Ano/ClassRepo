@@ -14,6 +14,9 @@ class Graduate(Person):
     @location.setter
     def location(self, location: str):
         self.__location = location
+
+    def get_profile(self):
+        return f"Hi! my name is {self.first_name} i am on the {self._scheme}"
         
 
 student = Graduate("Software Engineer", "Leeds", "John", "Doe", 25)
