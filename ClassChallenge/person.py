@@ -1,3 +1,5 @@
+from exception import Error
+
 class Person:
 
     """
@@ -9,8 +11,6 @@ class Person:
         self._last_name = last_name
         self.__age = age
 
-
-
     def get_last_name(self) -> str:
         return self._last_name
 
@@ -21,7 +21,16 @@ class Person:
         return self.__age
     
     def set_age(self, age):
+        if self.__age > 0:
+            print("Age cannot be negative")
+            raise Error("Age cannot be negative")
         self.__age = age
+
+
+
+
+
+
 
 
 

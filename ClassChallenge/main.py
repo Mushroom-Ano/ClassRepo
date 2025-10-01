@@ -1,4 +1,3 @@
-from person import *
 from graduate import *
 
 def main():
@@ -8,7 +7,8 @@ def main():
     #print(guy.__age) #Since age is private, can't be accessed. 
 
 
-    grad = Graduate(guy, "SWE", "Osterley")
+    grad = Graduate("Software Engineer", "Leeds", "John", "Doe", 25)
+    grad.set_age(-1)
     print(grad._Graduate__location)
     grad.location = "Leeds"
     print(grad._Graduate__location)
